@@ -1,10 +1,6 @@
 
-//import { simpleGit, CleanOptions } from 'simple-git';
-//import { parseBlame } from 'blamejs';
 import { blame } from './blame.mjs';
 import { create as createScanner } from 'scandir';
-
-//const git = simpleGit().clean(CleanOptions.FORCE);
 
 export const aiBlame = (target, aiAccounts)=>{
     var scandir = createScanner();
@@ -51,18 +47,7 @@ export const aiBlame = (target, aiAccounts)=>{
             resolve({
                 commits: allCommits,
                 files
-            })
-            /*Object.keys(files).forEach((key)=>{
-                const file = files[key].map((line)=>{
-                    const commit = allCommits[line.hash];
-                    if(aiAccounts.indexOf(commit.author.mail) !== -1){
-                        return '  [AI]  '+line.content;
-                    }
-                    return '        '+line.content;
-                }).join('\n');
-                
-                console.log(`${key}\n\n${file}\n`)
-            });*/
+            });
         });
     });
     
@@ -74,4 +59,3 @@ export const aiBlame = (target, aiAccounts)=>{
     
     return termination;
 };
-aiBlame(process.cwd(), ['abbey@khrome.net']);
