@@ -9,11 +9,3 @@ Usage
 ```bash
 ai-blame -u foo@bar.com,baz@boof.bif ~/path/to/directory/to/scan/
 ```
-
-```json
-{
-    "contributors": [
-        "foo@bar.com"
-    ]
-}
-```
