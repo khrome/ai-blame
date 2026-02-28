@@ -10,11 +10,15 @@
             "require": "./dist/index.cjs"
         }
     },
+    "bin": {
+        "ai-blame" : "./bin/ai-blame.mjs"
+    },
+    "scripts":{
+        "self-test" : "ai-blame --users foo@bar.com,baz@boof.bif ."
+    },
     "dependencies": {
-        "blamejs": "^1.0.0",
         "git-blame": "^1.4.0",
         "scandir": "^0.1.2",
-        "simple-git": "^3.32.3",
         "yargs": "^18.0.0"
     }
 }
