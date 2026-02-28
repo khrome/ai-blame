@@ -13,6 +13,8 @@
     "dependencies": {
         "blamejs": "^1.0.0",
         "git-blame": "^1.4.0",
-        "simple-git": "^3.32.3"
+        "scandir": "^0.1.2",
+        "simple-git": "^3.32.3",
+        "yargs": "^18.0.0"
     }
 }

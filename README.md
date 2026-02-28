@@ -7,7 +7,7 @@ Usage
 -----
 
 ```bash
-ai-blame -c ai-blame-config.json ~/path/to/directory/to/scan/
+ai-blame -u foo@bar.com,baz@boof.bif ~/path/to/directory/to/scan/
 ```
 
 ```json
