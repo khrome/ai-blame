@@ -11,10 +11,10 @@
         }
     },
     "bin": {
-        "ai-blame" : "./bin/ai-blame.mjs"
+        "ai-blame": "bin/ai-blame.mjs"
     },
-    "scripts":{
-        "self-test" : "ai-blame --users foo@bar.com,baz@boof.bif ."
+    "scripts": {
+        "self-test": "ai-blame --users foo@bar.com,baz@boof.bif ."
     },
     "dependencies": {
         "git-blame": "^1.4.0",
