@@ -1,0 +1,18 @@
+{
+    "name": "ai-blame",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "src/index.mjs",
+    "module": "src/index.mjs",
+    "exports": {
+        ".": {
+            "import": "./src/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "dependencies": {
+        "blamejs": "^1.0.0",
+        "git-blame": "^1.4.0",
+        "simple-git": "^3.32.3"
+    }
+}
